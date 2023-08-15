@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiago Moura Casella - Desenvolvedor de Software</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: black;
+            color: #ffffff;
         }
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            width: 100%; /* Set width to 100% */
+            margin: 0; /* Remove margin */
         }
         h1, h2, h3 {
             margin: 0;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
         }
         .section-heading {
             margin-top: 30px;
@@ -43,67 +46,152 @@
         .skills-list li {
             margin-bottom: 5px;
         }
+        .img {
+            padding: 15px;
+            border-radius: 50%;
+            height: 250px;
+          
+        }
+        ul.lista {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 35px;
+            background-color: black;
+        }
+        ul.lista li {
+            margin-right: 20px;
+            color: #121212;
+        }
+        a {
+            text-decoration: none;
+            color:#8EAAFB;
+            text-transform: none;
+            transition: 0.25s ease;
+            margin-top: 10px;
+            
+        }
+        ul.lista:hover a {
+            color: white;
+        }
+        ul.lista:hover a:hover {
+            color: blue;
+            box-shadow: 0 2px currentColor;
+        }
+        .resumo {
+            text-align: left;
+            
+            justify-content: space-between;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+         
+            width: 100%;/* Largura máxima da caixa */
+            display: flex;
+            
+            justify-content: space-between;
+        }
+        .lista{
+            box-shadow:0px 0px 10px rgba(0, 0, 0, 0.962);
+            margin-top: 10px;
+            color: #121212;
+        }
+        .sobre {
+            text-align: left;
+            
+            flex: 2;
+        }
+        .resumo-text {
+            color: #fff;
+            font-size: 10px; /* Tamanho de fonte menor */
+            line-height: 1.4; /* Espaçamento entre linhas */
+        }
+        .resumo-image {
+            flex: 1;
+            text-align: center;
+            
+            
+        }
+        .resumo-image img {
+            max-width: 75%;
+            height: 390px;
+            border-radius: 5px;
+            height: 350px;
+            box-sizing: border-box;
+            border: 10px solid black;
+        }
+        .resumo-image img {
+  overflow: hidden;
+ 
+}
+.link{
+    color: blue;
+}
+
+.resumo-image img {
+ 
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.resumo-image img{
+  transform: scale(1.0); /* Ajuste o valor para controlar o zoom */
+}
+.SESS{
+    text-align: left;
+            
+            justify-content: space-between;
+            background-color: blue;
+            width: 100%;/* Largura máxima da caixa */
+            justify-content: space-between;
+
+}
+
     </style>
 </head>
 <body>
     <header>
-        
         <img class="img" src="https://media.licdn.com/dms/image/D4D03AQF0tgxWfigKPQ/profile-displayphoto-shrink_400_400/0/1690471430582?e=1696464000&v=beta&t=cRbT8y3piXpZmBjdT28zAYjkt-Xt4oWSwEPZQAGk6tU" alt="imagem do LinkedIn">
-        <style>
-            .img{
-                padding: 15px;
-                border-radius: 50%;
-                height: 250px;
-            }
-        </style>
         <h1>Thiago Moura Casella</h1>
         <p><strong>Desenvolvedor de Software</strong></p>
         <p>Telefone: (11) 976859789 / Email: thiago.mcasella@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/thiago-casella/" target="_blank">https://www.linkedin.com/in/thiago-casella/</a></p>
-    </header>
+        <i ><a class="link" href="https://www.linkedin.com/in/thiago-casella/" target="_blank">https://www.linkedin.com/in/thiago-casella/</a></i>
+   
+    
     <div class="container">
         <ul class="lista">
-            <li><a href=""><button>sobre mim</button></a></li>
-            <li><a href="Exp_Prof.html"><button>experiencia profisional</button></a></li>
-            <li><a href=""><button>forma de contato</button></a></li>
-            <li><button>certificados</button></li>
+            <li><a href="index.html"><strong>Sobre Mim</strong></a></li>
+            <li><a href="Exp_Prof.html"><strong>Experiência Profissional</strong></a></li>
+            <li><a href="TelaProjetos.html"><strong>Projetos</strong></a></li>
         </ul>
-        <style>
-           .lista li {
-                margin-right: 20px; 
-            }
-            .lista{
-                display: flex;
-            }
-            .container{
-                margin-right: 150px;
-            }
-        </style>
-       
+    </section>
+        <div class="resumo">
+            <div class="sobre">
+                <h1><strong>Sobre Mim</strong></h1>
+                <br><br>
+                <div class="resumo-text">
+                    <h2>Olá, meu nome é Thiago.
 
-        <h2 class="section-heading">FORMAÇÃO ACADÊMICA</h2>
-        <div class="education-item">
-            <p>Ensino Superior: Análise e desenvolvimento de sistemas</p>
-            <p>Universidade: Anhembi Morumbi (MOOCA)</p>
-            <p>Início: AGO/2021</p>
-            <p>Previsão de término: DEZ/2023</p>
+                        Sou desenvolvedor de software formado em análise e desenvolvimento de sistemas pela universidade Anhembi Morumbi. <br> <br>
+                        
+                        Desde cedo, descobri minha paixão por aprender e inovar, minha expertise está em desenvolvimento de projetos com Java, mas minha verdadeira paixão é o python. <br> <br>Adoro trabalhar com bancos de dados como Mysql, explorando informações e criando relatórios detalhados. <br> <br>
+                        
+                        Desenvolvi vários projetos, entre eles estão: Encurtador de url, algumas páginas estáticas com HTML e css, gerador de senhas com Python acoplado ao banco de dados armazenando todas as senhas utilizadas pelos usuários. Além disso, tenho em meu portfólio a produção de um site avaliações de jogos com todas as operações CRUD, onde utilizei node.js, Tailwind. Para finalizar elaborei um sistema de desktop de cadastro de produtos totalmente feito com java puro utilizando a IDE netbeans. <br> <br>
+                        
+                        Estou atualmente como estagiário na PagSeguro, mas já liderei uma equipe e juntos conseguimos fazer história nas óticas Gassi, treinei pessoas que se tornaram líderes de setor para outras unidades da ótica. <br> <br>
+                        
+                        Estou trabalho atualmente em minhas habilidades back-end e desenvolvimento de automação com python, estou aberto as novas oportunidades com desenvolvedor. <br> <br>
+                        
+                        Se você está procurando um profissional apaixonado por desafios, inovação e compartilhamento de conhecimento, estou pronto para trazer resultados excepcionais à sua equipe. Vamos juntos alcançar novos patamares!</h2>
+                </div>
+            </div>
+            <div class="resumo-image">
+                <img src="fotopags.jpeg" alt="Imagem de Exemplo">
+            </div>
         </div>
-
-        <h2 class="section-heading">HABILIDADES E CERTIFICAÇÕES</h2>
-        <ul class="skills-list">
-            <li>Desenvolvimento web back-end</li>
-            <li>Inglês técnico</li>
-            <li>Node.js</li>
-            <li>Mysql e sqlite</li>
-            <li>Java</li>
-            <li>Lógica de programação</li>
-            <li>Básico de HTML e CSS</li>
-            <li>Git e github</li>
-            <li>API rest</li>
-        </ul>
-
-        <h2 class="section-heading">IDIOMAS</h2>
-        <p>Chisholm institute - Inglês intermediário/avançado</p>
     </div>
 </body>
 </html>
