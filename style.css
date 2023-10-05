@@ -71,6 +71,29 @@ body {
     align-items: center;
     gap: 3rem;
 }
+.baixar {
+    display: flex;
+    margin: 25px;
+    padding: 1rem;
+    width: 70%;
+    list-style: none; /* Remove o ponto de lista */
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--cor-primaria);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 70%;
+    margin: 25px auto;
+}
+.img_baixa{
+    width: 3%;
+   
+
+}
+
+  
+
 
 .section-main {
     display: flex;
